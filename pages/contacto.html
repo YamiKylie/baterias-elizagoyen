@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--Font Awesome-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!--Fav Icon-->
+    <link rel="shortcut icon" href="imgs/chat-icon.png" type="image/x-icon" />
+    <title>Soul Baterias</title>
+    <!-- CSS only -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+        <!-- Css -->
+        <link rel="stylesheet" href="../estilos/custom.css" />
+  </head>
+  <body>
+    <script src="js/bootstrap.js"></script>
+    <!--HEADER-->
+    <header class="container">
+      <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container-fluid">
+          <a href="../index.html">
+            <img
+              class="navbar-brand"
+              src="../images/logo.png"
+              alt="logo baterias"
+            />
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Navegacion"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a
+                  class="nav-link"
+                  aria-current="page"
+                  href="nosotros.html"
+                  >Nosotros</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="productos.html"
+                  >Productos</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="servicios.html"
+                  >Servicios</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="contacto.html"
+                  >Contacto</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!--END HEADER-->
+    <section class="container" clas="text-center">
+      <h1 class="titulo__formulario">
+        Consultanos lo que quieras 😉
+      </h1>
+    </section>
+    <!--FORM-->
+    <form class="container" class="row g-3 needs-validation" novalidate>
+      <div class="container" class="col-md-4">
+        <label for="validationCustom01" class="form-label"> Nombre</label>
+        <input type="text" class="form-control" id="validationCustom01" value="" required>
+        <div class="valid-feedback">
+          Looks good!
+        </div>
+      </div>
+      <div class="container" class="col-md-4">
+        <label for="validationCustom02" class="form-label">Apellido</label>
+        <input type="text" class="form-control" id="validationCustom02" value="" required>
+        <div class="valid-feedback">
+          Looks good!
+        </div>
+      </div>
+    <div class="container" class="col-md-4">
+      <label for="exampleFormControlInput1" class="form-label"
+        >Dirección de E-mail</label
+      >
+      <input
+        type="email"
+        class="form-control"
+        id="exampleFormControlInput1"
+        placeholder="nombre@ejemplo.com"
+      />
+    </div>
+    <div class="container" class="col-md-4">
+      <label for="validationCustom04" class="form-label">Indicanos tu consulta 😊</label>
+      <select class="form-select" id="validationCustom04" required>
+        <option selected disabled value="">...</option>
+        <option >Baterías</option>
+        <option >Instalación a domicilio</option>
+        <option >Sugerencias</option>
+        <option >Otras consultas</option>
+      </select>
+      <div class="invalid-feedback">
+        Please select a valid state.
+      </div>
+    <div class="container" class="col-md-4">
+      <label for="exampleFormControlTextarea1" class="form-label"
+        >Otras consultas:</label
+      >
+      <textarea
+        class="form-control"
+        id="exampleFormControlTextarea1"
+        rows="3"
+      ></textarea>
+
+      <div class="container" class="form-check">
+        <input
+          class="form-check-input"
+          type="checkbox"
+          value=""
+          id="flexCheckDefault"
+        />
+        <label class="form-check-label" for="flexCheckDefault">
+        Acepta Términos y Condiciones
+        </label>
+      </div>
+    </div>
+    <div class="col-12">
+      <button class="btn btn-primary"  type="submit">Enviar</button>
+    </div>
+  </form>
+      <!--END FORM-->
+    <!--FOOTER-->
+    <footer class="container">
+      <div>
+        <div class="row">
+          <div class="col">
+            <a href="index.html"
+              ><img
+                src="../images/medios_pago.png"
+                class="img-responsive"
+                alt="imagen todos los medios de pago"
+            /></a>
+          </div>
+          <div class="col">
+            <h6 class="text-center" >
+              © 2022 Soul Baterías - Todos los derechos reservados| Creado por
+              YamiEli
+            </h6>
+          </div>
+          <div class="col">
+            <ul>
+              <li>
+                <a href="https://www.instagram.com"
+                  ><i class="fab fa-instagram"></i
+                ></a>
+              </li>
+              <a href="https://www.facebook.com"
+                ><i class="fab fa-facebook"></i
+              ></a>
+              <li>
+                <a href="https://wa.me/5491166758426"
+                  ><i class="fab fa-whatsapp"> </i
+                ></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!--END FOOTER-->
+    <!-- JavaScript Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
