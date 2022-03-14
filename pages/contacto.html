@@ -22,8 +22,8 @@
       integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
       crossorigin="anonymous"
     />
-        <!-- Css -->
-        <link rel="stylesheet" href="../estilos/custom.css" />
+    <!-- Css -->
+    <link rel="stylesheet" href="../estilos/custom.css" />
   </head>
   <body>
     <script src="js/bootstrap.js"></script>
@@ -52,27 +52,18 @@
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav ms-auto">
               <li class="nav-item">
-                <a
-                  class="nav-link"
-                  aria-current="page"
-                  href="nosotros.html"
+                <a class="nav-link" aria-current="page" href="nosotros.html"
                   >Nosotros</a
                 >
               </li>
               <li class="nav-item">
-                <a class="nav-link active" href="productos.html"
-                  >Productos</a
-                >
+                <a class="nav-link active" href="productos.html">Productos</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link active" href="servicios.html"
-                  >Servicios</a
-                >
+                <a class="nav-link active" href="servicios.html">Servicios</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link active" href="contacto.html"
-                  >Contacto</a
-                >
+                <a class="nav-link active" href="contacto.html">Contacto</a>
               </li>
             </ul>
           </div>
@@ -80,77 +71,104 @@
       </nav>
     </header>
     <!--END HEADER-->
-    <section class="container" clas="text-center">
-      <h1 class="titulo__formulario">
-        Consultanos lo que quieras 😉
-      </h1>
+    <section class="text-center">
+      <h1 class="titulo__formulario">Consultanos lo que quieras 😉</h1>
     </section>
     <!--FORM-->
     <form class="container" class="row g-3 needs-validation" novalidate>
       <div class="container" class="col-md-4">
         <label for="validationCustom01" class="form-label"> Nombre</label>
-        <input type="text" class="form-control" id="validationCustom01" value="" required>
-        <div class="valid-feedback">
-          Looks good!
-        </div>
+        <input
+          type="text"
+          class="form-control"
+          id="validationCustom01"
+          value=""
+          required
+        />
+        <div class="valid-feedback">Looks good!</div>
       </div>
       <div class="container" class="col-md-4">
         <label for="validationCustom02" class="form-label">Apellido</label>
-        <input type="text" class="form-control" id="validationCustom02" value="" required>
-        <div class="valid-feedback">
-          Looks good!
+        <input
+          type="text"
+          class="form-control"
+          id="validationCustom02"
+          value=""
+          required
+        />
+        <div class="valid-feedback">Looks good!</div>
+      </div>
+      <div class="container" class="col-md-4">
+        <label for="exampleFormControlInput1" class="form-label"
+          >Dirección de E-mail</label
+        >
+        <input
+          type="email"
+          class="form-control"
+          id="exampleFormControlInput1"
+          placeholder="nombre@ejemplo.com"
+        />
+      </div>
+      <div class="container" class="col-md-4">
+        <label for="validationCustom04" class="form-label"
+          >Indicanos tu consulta 😊</label
+        >
+        <select class="form-select" id="validationCustom04" required>
+          <option selected disabled value="">...</option>
+          <option>Baterías</option>
+          <option>Instalación a domicilio</option>
+          <option>Sugerencias</option>
+          <option>Otras consultas</option>
+        </select>
+        </div>
+        <div class="invalid-feedback">Please select a valid state.</div>
+        <div class="container" class="col-md-4">
+          <label for="exampleFormControlTextarea1" class="form-label"
+            >Otras consultas:</label
+          >
+          <textarea
+            class="form-control"
+            id="exampleFormControlTextarea1"
+            rows="3"
+          ></textarea>
+        </div>
+
+        <div class="container" class="form-check">
+          <input
+            class="form-check-input"
+            type="checkbox"
+            value=""
+            id="flexCheckDefault"
+          />
+          <label class="form-check-label" for="flexCheckDefault">
+            Acepta Términos y Condiciones
+          </label>
         </div>
       </div>
-    <div class="container" class="col-md-4">
-      <label for="exampleFormControlInput1" class="form-label"
-        >Dirección de E-mail</label
-      >
-      <input
-        type="email"
-        class="form-control"
-        id="exampleFormControlInput1"
-        placeholder="nombre@ejemplo.com"
-      />
-    </div>
-    <div class="container" class="col-md-4">
-      <label for="validationCustom04" class="form-label">Indicanos tu consulta 😊</label>
-      <select class="form-select" id="validationCustom04" required>
-        <option selected disabled value="">...</option>
-        <option >Baterías</option>
-        <option >Instalación a domicilio</option>
-        <option >Sugerencias</option>
-        <option >Otras consultas</option>
-      </select>
-      <div class="invalid-feedback">
-        Please select a valid state.
+      <div class="container"
+      class="col-12">
+        <button class="btn btn-primary" type="submit">Enviar</button>
       </div>
-    <div class="container" class="col-md-4">
-      <label for="exampleFormControlTextarea1" class="form-label"
-        >Otras consultas:</label
-      >
-      <textarea
-        class="form-control"
-        id="exampleFormControlTextarea1"
-        rows="3"
-      ></textarea>
+    </form>
+    <!--END FORM-->
 
-      <div class="container" class="form-check">
-        <input
-          class="form-check-input"
-          type="checkbox"
-          value=""
-          id="flexCheckDefault"
-        />
-        <label class="form-check-label" for="flexCheckDefault">
-        Acepta Términos y Condiciones
-        </label>
+    <section class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <img
+            src="../images/WHATSAPP.jpg"
+            alt="imagen camioneta de delivery"
+            class="rounded"
+          />
+        </div>
+        <div class="col-md-6">
+          <p>
+Necesitas asistencia urgente? Comunicate a traves de nuestro whatsapp. Te asesoramos al instante!
+          </p>
+        </div>
       </div>
-    </div>
-    <div class="col-12">
-      <button class="btn btn-primary"  type="submit">Enviar</button>
-    </div>
-  </form>
-      <!--END FORM-->
+    </section>
+
     <!--FOOTER-->
     <footer class="container">
       <div>
@@ -164,7 +182,7 @@
             /></a>
           </div>
           <div class="col">
-            <h6 class="text-center" >
+            <h6 class="text-center">
               © 2022 Soul Baterías - Todos los derechos reservados| Creado por
               YamiEli
             </h6>
