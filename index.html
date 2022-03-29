@@ -16,6 +16,8 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <!--Wow js-->
+    <link rel="stylesheet" href="css/animate.css" />
     <!--Fav Icon-->
     <link rel="shortcut icon" href="imgs/chat-icon.png" type="image/x-icon" />
     <!-- Css -->
@@ -31,6 +33,10 @@
   </head>
   <body>
     <script src="js/bootstrap.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script>
+      new WOW().init();
+    </script>
     <!--HEADER-->
     <header class="container">
       <nav class="navbar navbar-expand-lg navbar-light">
@@ -204,8 +210,8 @@
       <div class="page-banner home-banner">
         <div class="container h-100">
           <div class="row align-items-center h-100">
-            <div class="col-lg-6 py-3 wow fadeInUp">
-              <p class="text-lg mb-5">
+            <div class="col-lg-6 py-3">
+              <p class="text-lg mb-5 wow fadeInUp">
                 Somos distribuidores con experiencia en el rubro. Contamos con
                 personal idóneo para su trabajo, el cual estará atento a
                 responder con honestidad y buen trato todas sus inquietudes
@@ -220,7 +226,11 @@
             </div>
             <div class="col-lg-6 py-3 wow zoomIn">
               <div class="img-place">
-                <img src="images/delivery-index.png" alt="" />
+                <img
+                  class="img-fluid"
+                  src="images/delivery-index.png"
+                  alt="logo camioneta delivery"
+                />
               </div>
             </div>
           </div>

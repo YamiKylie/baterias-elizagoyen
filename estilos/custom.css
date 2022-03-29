@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@100&family=Expletus+Sans:ital,wght@1,400;1,500;1,600&family=Inder&family=Michroma&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Genos:ital,wght@1,500&family=Ropa+Sans&family=Saira+Semi+Condensed:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@100&family=Expletus+Sans:ital,wght@1,400;1,500;1,600&family=Fredericka+the+Great&family=Inder&family=Michroma&family=Wallpoet&display=swap");
 * {
   padding: 0;
   margin: 0;
@@ -19,22 +20,14 @@ header {
   opacity: 0.7;
 }
 
-li {
-  list-style: none;
-}
-
-h1 {
-  font-family: "Genos", sans-serif;
-}
-
 a {
   font-size: 1.5rem;
   text-decoration: none;
-  color: #2b2d42;
+  color: #2b2d42 !important;
 }
 
 a:hover {
-  color: #1b816b;
+  color: #1b816b !important;
   -webkit-transform: scale(1, 1);
           transform: scale(1, 1);
   -webkit-box-shadow: 0px 0px 10px #666;
@@ -43,19 +36,12 @@ a:hover {
   cursor: pointer;
 }
 
-.container__zonas {
-  margin-top: 3rem;
-  padding: 1rem;
+li {
+  list-style: none;
 }
 
-.container__zonas--titulo {
-  color: #b90000;
-  font-family: "Michroma", sans-serif;
-  text-align: center;
-  margin: 4rem;
-  font-size: 3rem;
-  font-weight: 800;
-  animation: zoomOut 2s ease 2s 1 alternate-reverse both;
+h1 {
+  font-family: "Genos", sans-serif;
 }
 
 h2 {
@@ -65,21 +51,40 @@ h2 {
   font-size: 3rem;
 }
 
+p {
+  font-family: "Be Vietnam Pro", sans-serif;
+  font-size: 1.5rem;
+}
+
+.container__zonas {
+  margin-top: 3rem;
+  padding: 1rem;
+}
+
+.container__zonas--titulo {
+  color: #b90000;
+  font-family: "Be Vietnam Pro", sans-serif;
+  text-align: center;
+  margin: 4rem;
+  font-size: 3rem;
+  font-weight: 800;
+  animation: zoomOut 2s ease 2s 1 alternate-reverse both;
+}
+
 .texto__nosotros {
-  font-family: "Genos", sans-serif;
+  font-family: "Be Vietnam Pro", sans-serif;
   color: #140e0e;
   text-align: center;
-  font-size: 2rem;
+  font-size: 1.5rem;
   animation: slideOutLeft 2s ease 2s 1 alternate-reverse both;
 }
 
-.col-sm-6 img {
+.nosotros__socio img {
   border-radius: 2rem;
-  width: 95%;
-  margin-left: 2.5rem;
+  width: 100%;
 }
 
-.col-lg-4 img {
+.galeria img {
   width: 100%;
 }
 
@@ -89,6 +94,19 @@ h2 {
 
 .titulo__formulario {
   margin-top: 3rem;
+}
+
+.galeria__servicios {
+  padding: 2rem;
+}
+
+.galeria__servicios img {
+  width: 100%;
+}
+
+.contacto__whatsapp img {
+  border-radius: 2rem;
+  width: 50%;
 }
 
 /*FOOTER*/
@@ -111,12 +129,6 @@ footer .col-md-4 {
 
 footer .logo__redes img {
   width: 60%;
-}
-
-/*END FOOTER*/
-.contacto__whatsapp img {
-  border-radius: 2rem;
-  width: 50%;
 }
 
 /* MEDIA QUERIES */
@@ -148,10 +160,31 @@ footer .logo__redes img {
             justify-content: center;
     gap: 20px;
   }
+  .comentario {
+    border-top: 1px solid;
+    margin-top: 2rem;
+    padding-top: 1rem;
+  }
 }
 
 iframe {
   width: 100%;
+}
+
+/*GALERIA DE IMAGENES*/
+.galeria__servicios img:hover {
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  cursor: pointer;
+}
+
+/*FORM*/
+form {
+  max-width: 400px;
+  text-align: center;
+  margin: 2rem auto;
 }
 
 /*ANIMACION ZOOM*/

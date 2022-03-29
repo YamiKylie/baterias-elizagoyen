@@ -16,6 +16,19 @@ header {
   opacity: 0.7;
 }
 
+a {
+  font-size: 1.5rem;
+  text-decoration: none;
+  color: #2b2d42 !important;
+}
+a:hover {
+  color: rgb(27, 129, 107) !important;
+  transform: scale(1, 1);
+  box-shadow: 0px 0px 10px #666;
+  border-radius: $size2;
+  cursor: pointer;
+}
+
 li {
   list-style: none;
 }
@@ -24,56 +37,47 @@ h1 {
   font-family: "Genos", sans-serif;
 }
 
-a {
-  font-size: 1.5rem;
-  text-decoration: none;
-  color: #2b2d42;
+h2 {
+  font-family: "Genos", sans-serif;
+  color: #000000;
+  text-align: center;
+  font-size: $size3;
 }
-a:hover {
-  color: rgb(27, 129, 107);
-  transform: scale(1, 1);
-  box-shadow: 0px 0px 10px #666;
-  border-radius: 2rem;
-  cursor: pointer;
+
+p {
+  font-family: "Be Vietnam Pro", sans-serif;
+  font-size: $fontSize1;
 }
 
 .container__zonas {
-  margin-top: 3rem;
+  margin-top: $size3;
   padding: 1rem;
 }
 
 .container__zonas--titulo {
   color: rgb(185, 0, 0);
-  font-family: "Michroma", sans-serif;
+  font-family: $headingStyle;
   text-align: center;
   margin: 4rem;
-  font-size: 3rem;
+  font-size: $size3;
   font-weight: 800;
   animation: zoomOut 2s ease 2s 1 alternate-reverse both;
 }
 
-h2 {
-  font-family: "Genos", sans-serif;
-  color: #000000;
-  text-align: center;
-  font-size: 3rem;
-}
-
 .texto__nosotros {
-  font-family: "Genos", sans-serif;
+  font-family: "Be Vietnam Pro", sans-serif;
   color: #140e0e;
   text-align: center;
-  font-size: 2rem;
+  font-size: 1.5rem;
   animation: slideOutLeft 2s ease 2s 1 alternate-reverse both;
 }
 
-.col-sm-6 img {
-  border-radius: 2rem;
-  width: 95%;
-  margin-left: 2.5rem;
+.nosotros__socio img {
+  border-radius: $size2;
+  width: 100%;
 }
 
-.col-lg-4 img {
+.galeria img {
   width: 100%;
 }
 
@@ -82,7 +86,21 @@ h2 {
 }
 
 .titulo__formulario {
-  margin-top: 3rem;
+  margin-top: $size3;
+}
+
+.galeria__servicios {
+  padding: $size2;
+  img {
+    width: 100%;
+  }
+}
+
+.contacto__whatsapp {
+  img {
+    border-radius: $size2;
+    width: 50%;
+  }
 }
 
 /*FOOTER*/
@@ -100,20 +118,11 @@ footer {
   }
 }
 
-/*END FOOTER*/
-
-.contacto__whatsapp {
-  img {
-    border-radius: 2rem;
-    width: 50%;
-  }
-}
-
 /* MEDIA QUERIES */
 @media screen and (max-width: 767px) {
   .container__zonas--titulo {
     margin: 0;
-    font-size: 2rem;
+    font-size: $size2;
   }
 
   .col-md-4 img {
@@ -136,8 +145,28 @@ footer {
     justify-content: center;
     gap: 20px;
   }
+  .comentario {
+    border-top: 1px solid;
+    margin-top: 2rem;
+    padding-top: 1rem;
+  }
 }
 
 iframe {
   width: 100%;
+}
+
+/*GALERIA DE IMAGENES*/
+
+.galeria__servicios img:hover {
+  transition: all 0.5s ease;
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+/*FORM*/
+form {
+  max-width: 400px;
+  text-align: center;
+  margin: 2rem auto;
 }
